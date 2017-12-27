@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <!--坐标-->
+  <groupId>com.qf</groupId>
+  <artifactId>maven</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <!--打包方式-->
+  <packaging>war</packaging>
+  <!--工程url信息-->
+  <name>maven Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <!--当前工程需要的jar依赖-->
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <!--当前工程的构建信息-->
+  <build>
+    <finalName>maven</finalName>
+    <!-- 引入tomcat7-->
+
+    <plugins>
+      <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.2</version>
+        <configuration>
+          <port>80</port>
+          <path>/demo</path>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+
+
+</project>
