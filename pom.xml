@@ -24,7 +24,7 @@
   <!--当前工程的构建信息-->
   <build>
     <finalName>maven</finalName>
-    <!-- 引入tomcat7-->
+     <!--引入tomcat7-->
 
     <plugins>
       <plugin>
